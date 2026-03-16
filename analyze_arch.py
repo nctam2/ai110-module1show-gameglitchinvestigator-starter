@@ -8,7 +8,11 @@ Usage:
 
 import glob
 import os
+
+from dotenv import load_dotenv
 import anthropic
+
+load_dotenv()
 
 
 def collect_source_files(root: str = ".") -> dict[str, str]:
